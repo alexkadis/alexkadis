@@ -1,0 +1,448 @@
+/////////////////////////////////////////////////////////////////////
+// http://typecast.com/blog/a-more-modern-scale-for-web-typography //
+/////////////////////////////////////////////////////////////////////
+body {
+	font-size: 100%;
+    background: #F5F5F5 url('../img/subtle-grey-fixed-crushed.png') top center repeat;
+}
+
+body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+	font-size-adjust: 0.5;
+}
+
+a{
+    padding: 2px;
+}
+a:focus,
+a:hover,
+.pure-menu-link:focus{
+    background-color:$brand-color-light
+}
+
+#page {
+    font-size: 1em;
+    /* equivalent to 16px */
+    line-height: 1.25;
+    /* equivalent to 20px */
+}
+h1 {
+    font-size: 2em;
+    /* 2x body copy size = 32px */
+    line-height: 1.25;
+    /* 45px / 36px */
+}
+h2 {
+    font-size: 1.625em;
+    /* 1.625x body copy size = 26px */
+    line-height: 1.15384615;
+    /* 30px / 26px */
+}
+h3 {
+    font-size: 1.375em;
+    /* 1.375x body copy size = 22px */
+    line-height: 1.13636364;
+    /* 25px / 22px */
+}
+h4 {
+    font-size: 1.125em;
+    /* 1.125x body copy size = 18px */
+    line-height: 1.11111111;
+}
+blockquote {
+    font-size: 1.125em;
+    /* 20px / 16px */
+    line-height: 1.25;
+    /* 25px / 20px */
+}
+
+/**
+ * Site header
+ */
+.site-header {
+    border-top: 5px solid $brand-color;
+    border-bottom: 1px solid $brand-color-light;
+    min-height: 56px;
+}
+
+.site-title {
+    font-size: 26px;
+    line-height: 56px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    text-align: center;
+    margin: 0px auto;
+    display: block;
+}
+nav.site-nav {
+
+}
+
+hr {
+    margin: 1em 0 1em 0;
+    border: 0;
+    border-top: 1px solid $brand-color-light;
+}
+
+// #page {
+//         padding: $spacing-unit 1em;
+// }
+
+
+.post-list {
+        margin-left: 0;
+        list-style: none;
+
+        > li {
+                margin-bottom: $spacing-unit;
+        }
+}
+
+.post-meta {
+        font-size: $small-font-size;
+        color: $brand-color;
+}
+
+.post-link {
+        display: block;
+        font-size: 24px;
+}
+
+
+
+/**
+ * Posts
+ */
+header.post-header,
+h1.post-title {
+        margin-bottom: $spacing-unit / 5;
+}
+
+
+#page,
+header.site-header,
+footer.site-footer {
+    width: 90%;
+    background-color: white;
+    padding: $spacing-unit / 2 4px;
+    margin: 0px auto;
+}
+
+.wrapper {
+    clear: both;
+}
+
+@media (min-width: 43.75em) {
+    #page,
+    header.site-header,
+    footer.site-footer {
+        font-size: 1em;
+        /* equivalent to 16px */
+        line-height: 1.375;
+        /* equivalent to 22px */
+        width: 70%;
+        margin: 0px auto;
+        padding: $spacing-unit / 2 $spacing-unit;
+    }
+    h1 {
+        font-size: 2.5em;
+        /* 2.5x body copy size = 40px */
+        line-height: 1.125;
+    }
+    h2 {
+        font-size: 2em;
+        /* 2x body copy size = 32px */
+        line-height: 1.25;
+    }
+    h3 {
+        font-size: 1.5em;
+        /* 1.5x body copy size = 24px */
+        line-height: 1.25;
+    }
+    h4 {
+        line-height: 1.22222222;
+        /* (22px / 18px */
+    }   
+    blockquote {
+        font-size: 1.25em;
+        /* 24px / 16px = */
+        line-height: 1.45833333;
+        /* 35px / 24px */
+    }
+    h1 a.site-title {
+        float: left;
+        text-align: left;
+        display: block;
+        margin: -1.05em 0 0 0;
+    }
+    nav.site-nav {
+        display: block;
+        float: right;
+        margin: -1.05em 0 0 0;
+        li {
+            float: right;
+            display: block;
+        }
+    }
+
+}
+
+@media (min-width: 56.25em) {
+    #page,
+    header.site-header,
+    footer.site-footer {
+        width: 60%;
+    }
+    h1 a.site-title,
+    nav.site-nav {
+        margin: -1.25em 0 0 0;
+    }
+    h1 {
+        font-size: 3em;
+        /* 3x body copy size = 48px */
+        line-height: 1.05;
+        /* keep to a multiple of the 20px line height and something more appropriate for display headings */
+    }
+    h2 {
+        font-size: 2.25em;
+        /* 2.25x body copy size = 36px */
+        line-height: 1.25;
+    }
+    h3 {
+        font-size: 1.75em;
+        /* 1.75x body copy size = 28px */
+        line-height: 1.25;
+    }
+}
+
+///////////////
+// End Fonts //
+///////////////
+
+
+
+// .site-nav {
+		// float: right;
+		// line-height: 56px;
+//		 .menu-icon {
+//				 display: none;
+//		 }
+
+//		 .page-link {
+//				 color: $text-color;
+//				 line-height: $base-line-height;
+
+//				 // Gaps between nav items, but not on the first one
+//				 &:not(:first-child) {
+//						 margin-left: 20px;
+//				 }
+//		 }
+
+//		 @include media-query($on-palm) {
+//				 position: absolute;
+//				 top: 9px;
+//				 right: 30px;
+//				 background-color: $background-color;
+//				 border: 1px solid $brand-color-light;
+//				 border-radius: 5px;
+//				 text-align: right;
+
+//				 .menu-icon {
+//						 display: block;
+//						 float: right;
+//						 width: 36px;
+//						 height: 26px;
+//						 line-height: 0;
+//						 padding-top: 10px;
+//						 text-align: center;
+
+//						 > svg {
+//								 width: 18px;
+//								 height: 15px;
+
+//								 path {
+//										 fill: $brand-color-dark;
+//								 }
+//						 }
+//				 }
+
+				// .trigger {
+				// 		clear: both;
+				// 		display: none;
+				// }
+
+//				 &:hover .trigger {
+//						 display: block;
+//						 padding-bottom: 5px;
+//				 }
+
+//				 .page-link {
+//						 display: block;
+//						 padding: 5px 10px;
+//				 }
+//		 }
+// }
+
+
+
+// /**
+//  * Site footer
+//  */
+.site-footer {
+		border-top: 1px solid $brand-color-light;
+		padding: $spacing-unit 0;
+}
+
+.footer-heading {
+		font-size: 1em;
+		margin-bottom: $spacing-unit / 2;
+}
+
+
+.pure-u-1,
+.pure-u-1-1,
+.pure-u-1-2,
+.pure-u-2-2 {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+}
+
+.pure-u-1-2 {
+    width: 50%;
+    *width: 49.9690%;
+}
+
+.pure-u-1,
+.pure-u-1-1,
+.pure-u-2-2 {
+    width: 100%;
+}
+
+footer,
+footer p,
+footer li {
+    font-size: $small-font-size;
+}
+small {
+    font-size: $small-font-size;
+}
+footer li {
+    list-style-type: none;
+    margin: 0 0 $spacing-unit / 5 0
+}
+
+
+
+
+// .contact-list,
+// .social-media-list {
+// 		list-style: none;
+// 		margin-left: 0;
+// }
+
+// .footer-col-wrapper {
+// 		font-size: 15px;
+// 		color: $brand-color-dark;
+// 		margin-left: -$spacing-unit / 2;
+// 		@extend %clearfix;
+// }
+
+// .footer-col {
+// 		float: left;
+// 		margin-bottom: $spacing-unit / 2;
+// 		padding-left: $spacing-unit / 2;
+// }
+// 2 column layout
+// .footer-col-1 {
+//      width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+//      width:               calc(35% - (#{$spacing-unit} / 2));
+// }
+// .footer-col-2 {
+//      width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+//      width:               calc(20% - (#{$spacing-unit} / 2));
+// }
+
+// 3 column layout
+// .footer-col-1 {
+// 		width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+// 		width:				 calc(35% - (#{$spacing-unit} / 2));
+// }
+
+// .footer-col-2 {
+// 		width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+// 		width:				 calc(20% - (#{$spacing-unit} / 2));
+// }
+
+// .footer-col-3 {
+// 		width: -webkit-calc(45% - (#{$spacing-unit} / 2));
+// 		width:				 calc(45% - (#{$spacing-unit} / 2));
+// }
+
+// @include media-query($on-laptop) {
+// 		.footer-col-1,
+// 		.footer-col-2 {
+// 				width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+// 				width:				 calc(50% - (#{$spacing-unit} / 2));
+// 		}
+
+// 		.footer-col-3 {
+// 				width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+// 				width:				 calc(100% - (#{$spacing-unit} / 2));
+// 		}
+// }
+
+// @include media-query($on-palm) {
+// 		.footer-col {
+// 				float: none;
+// 				width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+// 				width:				 calc(100% - (#{$spacing-unit} / 2));
+// 		}
+// }
+
+
+
+/**
+ * Page content
+ */
+
+// h1 {
+// 		 font-size: 26px;
+// 		 letter-spacing: -1px;
+// 		 line-height: 1;
+
+// 		 @include media-query($on-laptop) {
+// 				 font-size: 36px;
+// 		 }
+// }
+
+// .post-content {
+// 		 margin-bottom: $spacing-unit;
+
+// 		 h2 {
+// 				 font-size: 32px;
+
+// 				 @include media-query($on-laptop) {
+// 						 font-size: 28px;
+// 				 }
+// 		 }
+
+// 		 h3 {
+// 				 font-size: 26px;
+
+// 				 @include media-query($on-laptop) {
+// 						 font-size: 22px;
+// 				 }
+// 		 }
+
+// 		 h4 {
+// 				 font-size: 20px;
+
+// 				 @include media-query($on-laptop) {
+// 						 font-size: 18px;
+// 				 }
+// 		 }
+// }
